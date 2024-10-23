@@ -1,0 +1,27 @@
+https://www.xsimulator.net/community/threads/smc3-arduino-3dof-motor-driver-and-windows-utilities.4957/#post-48122
+
+Packet Sent            Description                                                                                              Response Packet
+-------------------------------------------------------------------------------------------------------------------------------------------
+[Axx],[Bxx],[Cxx]  Send position updates for Motor 1,2,3 where xx is the binary position limitted to range 0-1024            None
+[Dxx],[Exx],[Fxx]  Send the Kp parameter for motor 1,2,3 where xx is the Kp binary value (restrict to 0 - 1000)              None
+[Gxx],[Hxx],[Ixx]  Send the Ki parameter for motor 1,2,3 where xx is the Ki binary value (restrict to 0 - 1000)              None
+[Jxx],[Kxx],[Lxx]  Send the Kd parameter for motor 1,2,3 where xx is the Kd binary value (restrict to 0 - 1000)              None
+[Mxx],[Nxx],[Oxx]  Send the Ks parameter for motor 1,2,3 where xx is the Ks (d term smoothing parameter between 1 and 20)    None
+[Pxy],[Qxy],[Rxy]  Send the PWMmin and PWMmax values x is the PWMmin and y is PWMmax each being in range 0-255              None
+                    PWMmax should always be greater than or equal to PWMmin
+[Sxy],[Txy],[Uxy]  Send the Motor Min/Max Limits (x) and Input Min/Max Limits (y) (Note same value used for Min and Max)    None
+[Vxy],[Wxy],[Xxy]  Send the Feedback dead zone (x) and the PWM reverse duty (y) for each motor                              None
+[mo1],[mo2],[mo3]  Request continous motor position, feedback, pwm and status data (all packets sent every 15ms)            [Axy][Bxy][Cxy][axy][bxy][cxy]
+[mo0]              Disable continuous feedback from previous [mo1],[mo2], or [mo3] command                                  None
+[ena]              Enable all motors                                                                                        None
+[sav]              Save parameters to non-volatile memory                                                                    None
+[ver]              Request the SMC3 software version, returned value is mult by 100.  (ie: 101 is ver 1.01)                  [vyy]
+[rdA],[rdB],[rdC]  Request motor target and feedback for Motor 1,2, or 3 parameters scaled 0-255.                            [Axy][Bxy][Cxy]
+[rda],[rdb],[rdc]  Request motor pwm and status data for Motor 1,2, or 3 parameters scaled 0-255.                            [Axy][Bxy][Cxy]
+[rdD],[rdE],[rdF]  Request the Kp parameter for motor 1,2,3 where xx is the Kp value multiplied by 100                      [Dxx][Exx][Fxx]
+[rdG],[rdH],[rdI]  Request the Ki parameter for motor 1,2,3 where xx is the Ki value multiplied by 100                      [Gxx][Hxx][Ixx]
+[rdJ],[rdK],[rdL]  Request the Kd parameter for motor 1,2,3 where xx is the Kd value multiplied by 100                      [Jxx][Kxx][Lxx]
+
+
+Note the Arduino SMC3 code does not check values sent are within valid ranges.  It is the job of the host application to keep values within
+sensible limits as recommended above.
