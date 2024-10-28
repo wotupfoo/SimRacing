@@ -135,5 +135,5 @@ https://github.com/SimulatorMotorController/SMC3
 
 ## Goal2.1 : Add VR Motion Compensation
 VR Motion Compensation OpenXR plugin has 3-4 ways it's expecting to get information about the location of the platform back to it. My understanding is that on newer headsets there are motion tracking devices that watch where the headset is in real space and relay that back. If it turns out the plugin is only getting the platform's actual position, that's easy to broadcast from the Stewart Platform controller.
-In fact, the Stewart Platform with the AC Servos above, ported the BLE Server demo where it's sending out data continuously to a GATT Service for anyone to listen. I believe it's updated at 1ms/1kHz interval.  
+In fact, the Stewart Platform with the AC Servos above, ported the ESP32-S3 BLE Server demo where it's sending out data continuously to a GATT Service for anyone to listen. I believe it's updated at 1ms/1kHz interval.  
 
