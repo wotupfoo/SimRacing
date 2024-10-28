@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Debug
+# *.pdb
+# *.sym
+
+# Visual Studio & Visual Studio Code temporary files
+*.cache
+**/obj/Debug
+**/obj/Release
