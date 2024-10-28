@@ -79,12 +79,14 @@ I'd like to explore this pipeline too:
 
 ## Here is the Warthog YouTube video:
 <div align="left">
+YouTube linked image<br>
       <a href="https://www.youtube.com/embed/8r8AUljZXo0">
-         <img src="https://img.youtube.com/vi/8r8AUljZXo0/0.jpg" style="width:50%;">
-      </a>
+         <img src="https://img.youtube.com/vi/8r8AUljZXo0/0.jpg" style="width:40%;">
+      </a><br>Warthog Project - mixed reality in DCS
+      <p>
+      <img src="WarthogMixedRealityThumbSml.jpg" style="width:40%;">
+      <br> The CHROMAKEY for the Warthog cockpit<p>
 </div>
-[Warthog Project - mixed reality in DCS](https://www.youtube.com/embed/8r8AUljZXo0) on YouTube.
-
 
 I've just discovered (10/27/24) that the OpenXR plugin [OpenXR-MotionCompensation](https://github.com/BuzzteeBear/OpenXR-MotionCompensation) has added chroma-key Mixed Reality passthrough support in [v0.3.8.0-beta](https://github.com/BuzzteeBear/OpenXR-MotionCompensation/releases/tag/v0.3.8.0-beta), it's still using the Virtual Desktop Windows App|Oculus App to get that chromakeying over to the headset.
 
