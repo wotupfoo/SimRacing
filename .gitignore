@@ -39,3 +39,10 @@
 *.cache
 **/obj/Debug
 **/obj/Release
+
+# LaTex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
