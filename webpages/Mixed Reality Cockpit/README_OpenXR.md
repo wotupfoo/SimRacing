@@ -12,7 +12,7 @@ AR is when you have normally transparent glasses or screen in front of you where
 <div align="center">
 <img alt="Warthog HUD" 
     border="1" 
-    src="Warthog_hud.jpg" 
+    src="WarthogProject_hud.jpg" 
     style="width:40%;">
 <img alt="F-14 Tomcat HUD" 
     border="1" 
