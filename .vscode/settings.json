@@ -6,5 +6,9 @@
         "chrono": "cpp",
         "limits": "cpp",
         "utility": "cpp"
-    }
+    },
+    "python.analysis.extraPaths": [
+        "C:\\Python39\\Lib",
+        "C:\\Python39\\Lib\\site-packages"
+    ],
 }
