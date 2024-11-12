@@ -18,7 +18,7 @@
 
 /*
     https://github.com/wotupfoo/SimRacing
-    <Stewart Platform for Sim Racing
+    <Stewart Platform for Sim Racing>
     Copyright (C) <2024>  <Edward Richards>
 
     This program is free software: you can redistribute it and/or modify
