@@ -20,6 +20,9 @@
 *.mod
 *.smod
 
+# Python
+**/__pycache__
+
 # Compiled Static libraries
 *.lai
 *.la
