@@ -52,7 +52,7 @@ MP4/4 with its vertical springs
 <div align="left">
 YouTube linked image<br>
       <a href="https://www.youtube.com/watch?v=TahfES4CbJo">
-         <img src="MP4-6 display showing temperature.jpg" style="width:100%;">
+         <img src="MP4-6 display showing temperature.JPG" style="width:100%;">
       </a><br>The 13.500rpm Honda V12 powered Legendary F1 car; 1991 McLaren MP4/6 ex-Ayrton Senna EPIC Sound!
 </div>
 
@@ -61,6 +61,6 @@ McLaren MP4/6 Senna Imola Qualify 1991R3 San Marino GP
 
 YouTube linked image<br>
       <a href="https://www.youtube.com/watch?v=ukPgjxyTGF4">
-         <img src="MP4-6 simrig with gear shifter.jpg" style="width:100%;">
+         <img src="MP4-6 simrig with gear shifter.JPG" style="width:100%;">
       </a><br>McLaren MP4/6 Senna Imola Qualify 1991R3 San Marino GP
 </div>
