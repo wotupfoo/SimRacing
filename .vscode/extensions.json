@@ -6,11 +6,12 @@
 	"recommendations": [
 		"ms-vscode.cpptools",						// c/c++
 		"jeff-hykin.better-cpp-syntax",				// c/c++ formatter
-//		"ms-vscode.cmake-tools"						// CMake
+//		"ms-vscode.cmake-tools",					// CMake
 		"vscode-arduino.vscode-arduino-community", 	// arduino
 		"ms-toolsai.jupyter", 						// Jupyter Notebook
 		"ms-python.python",							// Python
-		
+		"george-alisson.html-preview-vscode",		// HTML Preview without running a server
+		"james-yu.latex-workshop"					// LaTeX Preview tool - for chatGPT conversations
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
