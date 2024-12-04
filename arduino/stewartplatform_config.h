@@ -21,7 +21,7 @@ const float L1 = 50.0;  // eg 50mm
 // is less than this value the servo angle won't be updated.
 //
 // Increase to remove "twitching" of the actuator.
-// L2_DEADZONE MUST BE GREATER THAN ZERO.
+// L1_DEADZONE MUST BE GREATER THAN ZERO.
 const float L1_DEADZONE = 1.0; // eg 1mm
 
 // L2 - Actual Length of base and platform connecting arms (all 6 must be the same)
