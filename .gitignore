@@ -35,8 +35,9 @@
 *.app
 
 # Debug
-# *.pdb
-# *.sym
+*.pdb
+*.sym
+*.exe.config
 
 # Visual Studio & Visual Studio Code temporary files
 *.cache
