@@ -54,9 +54,9 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // Hardare Configuration
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-//MIN and MAX PWM pulse sizes, they can be found in servo documentation
-#define MAX 2200
-#define MIN 800
+//PWM_MIN and PWM_MAX PWM pulse sizes, they can be found in servo documentation
+#define PWM_MAX 2200
+#define PWM_MIN 800
 
 //Positions of servos mounted in opposite direction
 #define INV1 1
@@ -96,16 +96,16 @@ unsigned char setPos(float pe[]){
         getrxp(pe);
         theta_a[i]=getAlpha(&i);
         if(i==INV1||i==INV2||i==INV3){
-            servo_pos[i] = constrain(zero[i] - (theta_a[i])*servo_mult, MIN,MAX);
+            servo_pos[i] = constrain(zero[i] - (theta_a[i])*servo_mult, PWM_MIN, PWM_MAX);
         }
         else{
-            servo_pos[i] = constrain(zero[i] + (theta_a[i])*servo_mult, MIN,MAX);
+            servo_pos[i] = constrain(zero[i] + (theta_a[i])*servo_mult, PWM_MIN, PWM_MAX);
         }
     }
 
     for(int i = 0; i < 6; i++)
     {
-        if(theta_a[i]==servo_min||theta_a[i]==servo_max||servo_pos[i]==MIN||servo_pos[i]==MAX){
+        if(theta_a[i]==servo_min || theta_a[i]==servo_max || servo_pos[i]==PWM_MIN || servo_pos[i]==PWM_MAX){
             errorcount++;
         }
         servo[i].writeMicroseconds(servo_pos[i]);
@@ -131,12 +131,12 @@ void setup(){
 #endif
 
 //attachment of servos to PWM digital pins of arduino
-   servo[0].attach(3, MIN, MAX);
-   servo[1].attach(5, MIN, MAX);
-   servo[2].attach(6, MIN, MAX);
-   servo[3].attach(9, MIN, MAX);
-   servo[4].attach(10, MIN, MAX);
-   servo[5].attach(11, MIN, MAX);
+   servo[0].attach(3, PWM_MIN, PWM_MAX);
+   servo[1].attach(5, PWM_MIN, PWM_MAX);
+   servo[2].attach(6, PWM_MIN, PWM_MAX);
+   servo[3].attach(9, PWM_MIN, PWM_MAX);
+   servo[4].attach(10, PWM_MIN, PWM_MAX);
+   servo[5].attach(11, PWM_MIN, PWM_MAX);
 //putting into base position
    calcPos(arr);
 }
